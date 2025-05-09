@@ -11,7 +11,9 @@ This is a simple JavaScript coding challenge designed to assess your ability to 
 
 ## 📝 Task
 
-Write a JavaScript function named `countUniqueWords` that takes a string as input and returns the number of unique words in it.
+Write a JavaScript function named `countUniqueWords` that takes a string as input and returns an object of 2 keys, 
+ - an array of each unique words `words`.
+ - the number of unique words in it called `wordCount`.
 
 ### 🔧 Function Signature
 
@@ -31,9 +33,23 @@ function countUniqueWords(text) {
 ## Example
 
 ```javascript
-countUniqueWords("Hello, hello! How are you?"); // Output: 4
-// Unique words: "hello", "how", "are", "you"
+countUniqueWords("Hello, hello! How are you?"); 
+// Output: 
+/*
+{
+  words: ["hello", "how", "are", "you"],
+  wordCount: 4,
+}
+*/
 
 countUniqueWords("One fish, two fish. Red fish, blue fish."); // Output: 5
 // Unique words: "one", "fish", "two", "red", "blue"
+// Output: 
+/*
+{
+  words: ["one", "fish", "two", "red", "blue"],
+  wordCount: 5,
+}
+*/
+
 ```
